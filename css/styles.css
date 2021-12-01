@@ -438,6 +438,10 @@ p {
   color: var(--white-color);
 }
 
+.join {
+  margin-right: 93px;
+}
+
 .footer-section .description-title {
   color: var(--white-color);
   margin-bottom: 20px;
@@ -453,6 +457,18 @@ p {
 .footer-section .social-link:hover,
 .footer-section .social-link:focus {
   background-color: var(--accent-color);
+}
+
+.subscribe-field {
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline-style: none;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Модальное окно */
@@ -480,6 +496,7 @@ p {
 }
 
 .modal {
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
   position: relative;
@@ -489,6 +506,18 @@ p {
   transition: transform 300ms ease-in-out;
 
   background-color: var(--white-color);
+}
+
+.modal-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
 }
 
 .close-border {
@@ -505,6 +534,66 @@ p {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
+}
+
+.input-field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.input-retangle {
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+}
+
+.textarea-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.textarea-field .comment-area::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-area {
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.agreement-submit {
+  text-align: center;
+}
+
+.agreemenf-field {
+  margin-bottom: 30px;
+}
+
+.agreement-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.agreement-link {
+  color: var(--accent-color);
 }
 
 /* Портфолио */
