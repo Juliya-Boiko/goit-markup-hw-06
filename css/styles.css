@@ -645,20 +645,21 @@ p {
 }
 
 .checkbox-icon {
-  margin-right: 8px;
   display: inline-block;
   width: 16px;
   height: 15px;
-
-  background-image: url("../images/cb-retangle.svg");
+  background-image: url(../images/cb-retangle.svg);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .checkbox:checked + .checkbox-icon {
-  background-color: var(--accent-color);
   background-image: url(../images/mark.svg);
+  background-color: var(--accent-color);
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .agreement-text {
