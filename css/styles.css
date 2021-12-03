@@ -181,6 +181,8 @@ p {
   letter-spacing: 0.03em;
 
   cursor: pointer;
+
+  transition: box-shadow var(--transition-prop);
 }
 
 /* Описание и наша команда */
@@ -585,6 +587,7 @@ p {
   top: 20px;
   left: 12px;
   transform: translateY(50%);
+  transition: fill var(--transition-prop);
 }
 
 .input-retangle {
@@ -593,6 +596,8 @@ p {
   outline: none;
 
   border-radius: 4px;
+
+  transition: border var(--transition-prop);
 }
 
 .input-retangle:focus {
