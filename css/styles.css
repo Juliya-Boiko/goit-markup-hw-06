@@ -8,6 +8,7 @@
   --address-link-color: rgba(255, 255, 255, 60%);
   --logo-color: #afb1b8;
   --transition-prop: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --input-color: #000000;
 }
 
 .body {
@@ -439,17 +440,18 @@ p {
   color: var(--white-color);
 }
 
-/* .join {
-  margin-right: 93px;
-} */
-
 .subscribe {
   margin-left: auto;
 }
 
-.footer-section .description-title {
-  color: var(--white-color);
+.footer-title {
   margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .footer-section .social-link {
@@ -529,7 +531,7 @@ p {
 }
 
 .modal-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
@@ -599,8 +601,9 @@ p {
   padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
-
   border-radius: 4px;
+
+  color: var(--input-color);
 
   transition: border var(--transition-prop);
 }
@@ -642,14 +645,11 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  color: var(--input-color);
 }
 
 .comment-area:focus {
   border: 1px solid var(--accent-color);
-}
-
-.agreement-submit {
-  text-align: center;
 }
 
 .agreemenf-field {
@@ -673,6 +673,7 @@ p {
   border-radius: 2px;
   transition: background-color var(--transition-prop),
     background-image var(--transition-prop);
+  cursor: pointer;
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -688,6 +689,7 @@ p {
 .agreement-text {
   display: flex;
   align-items: center;
+  margin-right: 3px;
 
   font-size: 14px;
   line-height: 1.71;
@@ -702,7 +704,12 @@ p {
   text-decoration-skip-ink: none;
 }
 
-.agreement-submit .primary-button:hover {
+.feedback-form .primary-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.feedback-form .primary-button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
