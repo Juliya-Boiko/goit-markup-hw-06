@@ -442,6 +442,11 @@ p {
 
 .subscribe {
   margin-left: auto;
+  margin-top: 12px;
+}
+
+.join {
+  margin-top: 12px;
 }
 
 .footer-title {
@@ -646,13 +651,15 @@ p {
   border-radius: 4px;
   outline: none;
   color: var(--input-color);
+
+  transition: border var(--transition-prop);
 }
 
 .comment-area:focus {
   border: 1px solid var(--accent-color);
 }
 
-.agreemenf-field {
+.agreement-field {
   display: flex;
   align-items: center;
   justify-content: center;
